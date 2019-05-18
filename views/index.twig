@@ -1,6 +1,16 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+  <form id = 'upload_image'>
+    <p>
+      <input type="file" name="profile" id="profile">
+    </p>
+    <p>
+      <button type="button" id = "sendbtn">Cargar</button>
+    </p>
+  </form>
+{% endblock %}
+
+{% block scrips %}
+<script src="/javascripts/upload.js"></script>
 {% endblock %}
